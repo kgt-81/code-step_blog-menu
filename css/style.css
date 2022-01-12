@@ -1,0 +1,293 @@
+html {
+  color: #333;
+  font-family: "Noto Sans","Noto Sans JP";
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+.readmore {
+  text-align: center;
+}
+
+.readmore a {
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.readmore a::after {
+  background-color: #333;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  width: 100%;
+}
+
+.readmore a:hover::after {
+  bottom: -2px;
+  opacity: 0;
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.site-title {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav .wrapper {
+  overflow-x: scroll;
+}
+
+nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+nav ul li {
+  padding: 10px 60px 10px 0;
+}
+
+nav ul a {
+  color: #fff;
+  font-size: 14px;
+}
+
+header + .wrapper {
+  margin-bottom: 60px;
+  padding-top: 150px;
+}
+
+header + .wrapper article {
+  margin-bottom: 30px;
+}
+
+header + .wrapper article img {
+  width: 100%;
+}
+
+header + .wrapper article .article-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+main article {
+  margin-bottom: 80px;
+}
+
+main article > a {
+  display: block;
+}
+
+main article .article-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+
+main article .meta {
+  margin-bottom: 10px;
+}
+
+main article .meta a {
+  font-size: 14px;
+}
+
+main article .meta a:first-of-type {
+  margin-right: 20px;
+}
+
+main article .text {
+  padding: 10px 40px 30px;
+}
+
+aside > div {
+  margin-bottom: 60px;
+}
+
+.side-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.author {
+  text-align: center;
+}
+
+.author img {
+  height: 130px;
+  margin-bottom: 30px;
+  width: 130px;
+}
+
+.author .profile {
+  text-align: left;
+  font-size: 14px;
+}
+
+.ranking article {
+  margin-bottom: 30px;
+}
+
+.ranking .article-title {
+  font-size: 14px;
+}
+
+.archive ul {
+  width: 100%;
+}
+
+.archive ul li {
+  border-top: 1px solid #333;
+  font-size: 14px;
+  list-style: none;
+  padding: 20px;
+}
+
+.archive ul li:last-of-type {
+  border-bottom: 1px solid #333;
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+footer .content {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+footer .item {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+footer .item .footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+footer .item .about-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+footer .item .about-list li {
+  margin-bottom: 5px;
+}
+
+footer .item .about-list .arrow {
+  padding-left: 12px;
+  position: relative;
+}
+
+footer .item .about-list .arrow::before {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 6px 0 6px 9px;
+  content: '';
+  left: 0;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+
+footer .item .menu-item {
+  width: 100%;
+}
+
+footer .item .menu-item li {
+  border-top: 1px solid #333;
+  font-size: 14px;
+  list-style: none;
+  padding: 15px;
+}
+
+footer .item .menu-item li:last-of-type {
+  border-bottom: 1px solid #333;
+}
+
+footer .copyright {
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .wrapper {
+    overflow: auto;
+  }
+  .col-2 {
+    margin-bottom: 60px;
+  }
+  header + .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header + .wrapper article {
+    margin-bottom: 0;
+    width: 32%;
+  }
+  header + .wrapper article img {
+    width: auto;
+  }
+  header + .wrapper article .article-title {
+    margin-bottom: 15px;
+  }
+  main {
+    width: 63.25%;
+  }
+  aside {
+    padding: 20px;
+    width: 35.42%;
+  }
+  footer .item {
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
